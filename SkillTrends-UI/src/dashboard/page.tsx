@@ -25,15 +25,10 @@ import { FileUploadDialog } from "@/components/file-upload-dialog";
 import { AnalysisResponse } from "@/components/analysis-response";
 import { SquareCode } from "lucide-react";
 
-
-  BreadcrumbSeparator,
+import {
+  BreadcrumbSeparator
 } from "@/components/ui/breadcrumb"
 import { Separator } from "@/components/ui/separator"
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar"
 import { title } from "process"
 import { useEffect, useRef, useState, createContext, ReactNode, useContext } from "react"
 
