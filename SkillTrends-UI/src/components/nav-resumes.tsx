@@ -22,28 +22,27 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
+import { useContext } from "react"
+import { StateContext } from "@/dashboard/page"
 
-export function NavResumes({
-  resumes,
-}: {
-  resumes: {
-    name: string
-    url: string
-    icon: LucideIcon
-  }[]
-}) {
+export function NavResumes() {
+  const context = useContext(StateContext);
   const { isMobile } = useSidebar()
-
+  const clickResume = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, resumeTitle: string) => {
+    e.preventDefault();
+    context?.setSelectedResume(resumeTitle)
+  }
   return (
     <SidebarGroup className="group-data-[collapsible=icon]:hidden">
       <SidebarGroupLabel>My Resumes</SidebarGroupLabel>
       <SidebarMenu>
-        {resumes.map((item) => (
-          <SidebarMenuItem key={item.name}>
+        {context?.resumes.map((item) => (
+          <SidebarMenuItem key={item.title}>
             <SidebarMenuButton asChild>
-              <a href={item.url}>
-                <item.icon />
-                <span>{item.name}</span>
+              <a 
+               
+                onClick={(e) => clickResume(e, item.title)}>
+                <span>{item.title}</span>
               </a>
             </SidebarMenuButton>
             <DropdownMenu>
