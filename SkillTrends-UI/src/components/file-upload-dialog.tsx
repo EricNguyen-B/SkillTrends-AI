@@ -33,7 +33,6 @@ export function FileUploadDialog({
 
   const handleSubmit = () => {
     if (selectedFile) {
-      // Immediately pass the file back to update the resume list.
       if (onFileUpload) {
         onFileUpload(selectedFile);
       }
@@ -41,8 +40,7 @@ export function FileUploadDialog({
       reader.onload = async (e) => {
         const extractedText = e.target?.result;
         try {
-          // Send the extracted text to the POST endpoint using fetch.
-          const response = await fetch("/api/analyze-resume", {
+          const response = await fetch("http://localhost:3000/api/analyze-resume", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ extractedText }),

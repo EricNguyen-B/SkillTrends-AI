@@ -17,8 +17,8 @@ import { AnalysisResponse } from "@/components/analysis-response";
 import { SquareCode } from "lucide-react";
 
 export default function Page() {
-  const [jobType, setJobType] = React.useState("");
-  const [city, setCity] = React.useState("");
+  const [jobType, setJobType] = React.useState("Software Engineer");
+  const [city, setCity] = React.useState("New York");
   const [uploadedFile, setUploadedFile] = React.useState<File | null>(null);
   const [resumes, setResumes] = React.useState<
     { name: string; url?: string; icon?: React.ElementType }[]
@@ -27,34 +27,91 @@ export default function Page() {
   const [analysisResult, setAnalysisResult] = React.useState("");
 
   const handleJobTypeSelect = (value: string) => {
+    console.log("Selected job type:", value);
     setJobType(value);
   };
 
   const handleCitySelect = (value: string) => {
+    console.log("Selected city:", value);
     setCity(value);
-  };
-
-  const handleFileUpload = (file: File) => {
-    setUploadedFile(file);
-    const newResume = { name: file.name, url: "#", icon: SquareCode };
-    // Append the new resume to the dynamic list.
-    setResumes((prev) => [...prev, newResume]);
   };
 
   const handleResumeAnalysis = (analysisText: string) => {
     setResumeAnalysis(analysisText);
   };
 
+  const extractCandidateText = (candidate: any): string => {
+    if (candidate.content && Array.isArray(candidate.content.parts)) {
+      const firstPart = candidate.content.parts[0];
+      if (firstPart && firstPart.text) {
+        return firstPart.text;
+      }
+    }
+    if (typeof candidate.content === "string") {
+      return candidate.content;
+    }
+    return "";
+  };
+
+  const handleFileUpload = async (file: File) => {
+    setUploadedFile(file);
+    const newResume = { name: file.name, url: "#", icon: SquareCode };
+    setResumes((prev) => [...prev, newResume]);
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const response = await fetch("http://localhost:3000/api/analyze-resume", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
+      if (data?.candidates && data.candidates.length > 0) {
+        const candidate = data.candidates[0];
+        const text = extractCandidateText(candidate);
+        if (text) {
+          handleResumeAnalysis(text);
+          console.log("Resume Analysis:", text);
+        } else {
+          console.error("No candidate text found in resume analysis response", candidate);
+        }
+      } else {
+        console.error("No candidates returned in resume analysis response", data);
+      }
+    } catch (error) {
+      console.error("Error during resume analysis", error);
+    }
+  };
+
   const handleAnalyze = async () => {
+    if (!jobType || !city) {
+      console.error("Job type or city is missing");
+      return;
+    }
+
     try {
       const prompt = `Based on my resume analysis: ${resumeAnalysis}. My preferences: I am looking for a ${jobType} role in ${city}. Please provide a concise analysis of my fit for this role, including job market statistics and any experience gaps or skill shortages.`;
+      
       const response = await fetch(
-        `/api/analyze-job?jobType=${encodeURIComponent(jobType)}&location=${encodeURIComponent(city)}`,
+        `http://localhost:3000/api/analyze-job?jobType=${encodeURIComponent(
+          jobType
+        )}&location=${encodeURIComponent(city)}`,
         { method: "GET" }
       );
       const data = await response.json();
-      setAnalysisResult(String(data));
-      console.log("Job Analysis:", data);
+      if (data?.candidates && data.candidates.length > 0) {
+        const candidate = data.candidates[0];
+        const text = extractCandidateText(candidate);
+        if (text) {
+          setAnalysisResult(text);
+          console.log("Job Analysis:", text);
+        } else {
+          console.error("No candidate text found in job analysis response", candidate);
+        }
+      } else {
+        console.error("No candidates returned in job analysis response", data);
+      }
     } catch (error) {
       console.error("Error during job analysis", error);
     }
