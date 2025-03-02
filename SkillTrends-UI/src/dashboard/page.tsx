@@ -46,12 +46,12 @@ export default function Page() {
           <div className="grid gap-4 md:grid-cols-[1fr_1.5fr]">
             <div className="flex flex-col gap-4">
 
-              <div className="aspect-video rounded-xl bg-muted/50"> 
-                <GraphDialog />
-              </div>
-
               <div className="aspect-video rounded-xl bg-muted/50" > 
                 <CandidateGradeDialog />
+              </div>
+              
+              <div className="aspect-video rounded-xl bg-muted/50"> 
+                <GraphDialog />
               </div>
 
               <div className="aspect-video rounded-xl bg-muted/50" > 
