@@ -1,7 +1,13 @@
+
 "use client";
 
 import * as React from "react";
-import { AppSidebar } from "@/components/app-sidebar";
+import { AppSidebar } from "@/components/app-sidebar"
+import CandidateGradeDialog from "@/components/candidate-grade-dialog"
+import SkillGapDialog from "@/components/skill-gap-dialog"
+import BarChart from "@/components/graph"
+import GraphDialog from "@/components/graph-dialog"
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,6 +21,8 @@ import { Button } from "@/components/ui/button";
 import { FileUploadDialog } from "@/components/file-upload-dialog";
 import { AnalysisResponse } from "@/components/analysis-response";
 import { SquareCode } from "lucide-react";
+
+
 
 export default function Page() {
   const [jobType, setJobType] = React.useState("Software Engineer");
@@ -156,14 +164,25 @@ export default function Page() {
         <div className="flex flex-1 flex-col gap-2 p-2 pt-0">
           <div className="grid gap-4 md:grid-cols-[1fr_1.5fr]">
             <div className="flex flex-col gap-4">
-              <div className="aspect-video rounded-xl bg-muted/50" />
-              <div className="aspect-video rounded-xl bg-muted/50" />
-              <div className="aspect-video rounded-xl bg-muted/50" />
+
+              <div className="aspect-video rounded-xl bg-muted/50" > 
+                <CandidateGradeDialog />
+              </div>
+              
+              <div className="aspect-video rounded-xl bg-muted/50"> 
+                <GraphDialog />
+              </div>
+
+              <div className="aspect-video rounded-xl bg-muted/50" > 
+                <SkillGapDialog />
+              </div>
+
             </div>
             <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
           </div>
           {analysisResult && <AnalysisResponse text={analysisResult} />}
         </div>
+      {/* <BarChart/> */}
       </SidebarInset>
     </SidebarProvider>
   );
