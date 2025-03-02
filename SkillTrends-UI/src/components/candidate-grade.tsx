@@ -1,94 +1,85 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactECharts from "echarts-for-react";
 
-const CandidateGrade: React.FC = () => {
+interface CandidateGradeProps {
+  matchPercentage: number; // Expected to be between 0 and 1
+}
+
+const CandidateGrade: React.FC<CandidateGradeProps> = ({ matchPercentage }) => {
+  const [gaugeValue, setGaugeValue] = useState(matchPercentage * 100);
+
   const option = {
     series: [
       {
         type: 'gauge',
-        startAngle: 180,
-        endAngle: 0,
-        center: ['50%', '65%'],
-        radius: '70%',
-        min: 0,
-        max: 1,
-        splitNumber: 8,
+        startAngle: 90,
+        endAngle: -270,
+        pointer: {
+          show: false, // Hides the pointer (arrow)
+        },
+        progress: {
+          show: true,
+          overlap: false,
+          roundCap: true,
+          clip: false,
+          itemStyle: {
+            borderWidth: 1,
+            borderColor: '#464646',
+          },
+        },
         axisLine: {
           lineStyle: {
-            width: 6,
-            color: [
-              [0.25, '#FF6E76'],
-              [0.5, '#FDDD60'],
-              [0.75, '#58D9F9'],
-              [1, '#7CFFB2']
-            ]
-          }
-        },
-        pointer: {
-          icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
-          length: '12%',
-          width: 20,
-          offsetCenter: [0, '-60%'],
-          itemStyle: {
-            color: 'auto'
-          }
-        },
-        axisTick: {
-          length: 12,
-          lineStyle: {
-            color: 'auto',
-            width: 2
-          }
+            width: 40,
+          },
         },
         splitLine: {
-          length: 20,
-          lineStyle: {
-            color: 'auto',
-            width: 5
-          }
+          show: false,
+          distance: 0,
+          length: 10,
+        },
+        axisTick: {
+          show: false,
         },
         axisLabel: {
-          color: '#464646',
-          fontSize: 20,
-          distance: -50,
-          rotate: 'tangential',
-          formatter: function (value: number) {
-            if (value === 0.875) {
-              return 'Perfect';
-            } else if (value === 0.625) {
-              return 'Grade B';
-            } else if (value === 0.375) {
-              return 'Grade C';
-            } else if (value === 0.125) {
-              return 'Grade D';
-            }
-            return '';
-          }
-        },
-        title: {
-          offsetCenter: [0, '-10%'],
-          fontSize: 20
-        },
-        detail: {
-          fontSize: 30,
-          offsetCenter: [0, '-35%'],
-          valueAnimation: true,
-          formatter: function (value: number) {
-            return Math.round(value * 100) + '';
-          },
-          color: 'inherit'
+          show: false,
+          distance: 50,
         },
         data: [
           {
-            value: 0.7,
-            name: 'Grade Rating'
-          }
-        ]
-      }
-    ]
+            value: gaugeValue,
+            name: 'Match Percentage',
+            title: {
+              offsetCenter: ['0%', '-30%'],
+            },
+            detail: {
+              valueAnimation: true,
+              offsetCenter: ['0%', '-10%'], // Adjusted value to move the percentage lower
+              formatter: '{value}%',
+            },
+          },
+        ],
+        title: {
+          fontSize: 14,
+        },
+        detail: {
+          width: 50,
+          height: 14,
+          fontSize: 14,
+          color: 'inherit',
+          borderColor: 'inherit',
+          borderRadius: 20,
+          borderWidth: 1,
+        },
+      },
+    ],
   };
+
+  useEffect(() => {
+    setGaugeValue(matchPercentage * 100); // Update the gauge value whenever matchPercentage changes
+  }, [matchPercentage]);
 
   return <ReactECharts option={option} style={{ height: "400px", width: "400px" }} />;
 };
 
 export default CandidateGrade;
+
