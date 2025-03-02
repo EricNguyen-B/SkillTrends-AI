@@ -34,6 +34,7 @@ const BarChart: React.FC = () => {
         axisTick: {
           show: false
         },
+        //return the 10 most repeated words in the job description
         data: ['python', 'java', 'c++', 'C', 'C#', 'Ruby', 'Rust']
       }
     ],
@@ -49,6 +50,7 @@ const BarChart: React.FC = () => {
         emphasis: {
           focus: 'series'
         },
+        //the amount of times the words has been repeated
         data: [32, 30, 34, 37, 39, 45, 42]
       },
       {
@@ -63,6 +65,7 @@ const BarChart: React.FC = () => {
         emphasis: {
           focus: 'series'
         },
+        //
         data: [-12, -13, -10, -13, -19, -23, -21],
         tooltip: {
           valueFormatter: (value: number) => Math.abs(value)

@@ -1,4 +1,5 @@
 import { AppSidebar } from "@/components/app-sidebar"
+import CandidateGradeDialog from "@/components/candidate-grade-dialog"
 import BarChart from "@/components/graph"
 import GraphDialog from "@/components/graph-dialog"
 import {
@@ -45,8 +46,11 @@ export default function Page() {
             <div className="flex flex-col gap-4">
               <div className="aspect-video rounded-xl bg-muted/50"> 
                 <GraphDialog />
+                
               </div>
-              <div className="aspect-video rounded-xl bg-muted/50" />
+              <div className="aspect-video rounded-xl bg-muted/50" > 
+                <CandidateGradeDialog />
+              </div>
             </div>
             <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
           </div>

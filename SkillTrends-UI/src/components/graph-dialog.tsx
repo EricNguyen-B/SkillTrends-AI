@@ -7,25 +7,27 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import BarChart from "./graph"
-import { useState } from "react";
+
 
 
 export default function GraphDialog() {
-    const [DialogTrig, setDialogTrig] = useState();
     return (
         <div >
             <Dialog>
             <DialogTrigger><BarChart /></DialogTrigger>
-            <DialogContent>
-                <DialogHeader>
-                <DialogTitle>Are you absolutely sure?</DialogTitle>
-                <DialogDescription>
-                    <div style={{width:"90%", height: "70%"}}>
-                    <BarChart />
-                    </div>
-                </DialogDescription>
-                </DialogHeader>
-            </DialogContent>
+                <div > 
+                    <DialogContent style={{width:"100%", height: "50%", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <div>
+
+                            <DialogHeader>
+                            <DialogTitle>Most Words Found</DialogTitle>
+                            <DialogDescription>
+                                <BarChart />
+                            </DialogDescription>
+                            </DialogHeader>
+                        </div>
+                    </DialogContent>
+                </div>
             </Dialog>
         </div>
     )
