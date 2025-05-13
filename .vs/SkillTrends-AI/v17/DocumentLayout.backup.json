@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Controllers\\RiotApiController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\Controllers\\RiotApiController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Services\\RiotApiService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\Services\\RiotApiService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\SkillTrends-API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\SkillTrends-API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Settings\\ApiKeySettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\Settings\\ApiKeySettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\project.nuget.cache||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\obj\\project.nuget.cache||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.dgspec.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.dgspec.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.props||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiKeySettings.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Settings\\ApiKeySettings.cs",
+              "RelativeDocumentMoniker": "SkillTrends-API\\Settings\\ApiKeySettings.cs",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Settings\\ApiKeySettings.cs",
+              "RelativeToolTip": "SkillTrends-API\\Settings\\ApiKeySettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:50:56.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SkillTrends-API.csproj",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\SkillTrends-API.csproj",
+              "RelativeDocumentMoniker": "SkillTrends-API\\SkillTrends-API.csproj",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\SkillTrends-API.csproj",
+              "RelativeToolTip": "SkillTrends-API\\SkillTrends-API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-13T21:41:26.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "project.nuget.cache",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\project.nuget.cache",
+              "RelativeDocumentMoniker": "SkillTrends-API\\obj\\project.nuget.cache",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\project.nuget.cache",
+              "RelativeToolTip": "SkillTrends-API\\obj\\project.nuget.cache",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002368|",
+              "WhenOpened": "2025-05-13T21:41:18.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SkillTrends-API.csproj.nuget.dgspec.json",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.dgspec.json",
+              "RelativeDocumentMoniker": "SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.dgspec.json",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.dgspec.json",
+              "RelativeToolTip": "SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.dgspec.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-13T21:41:17.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SkillTrends-API.csproj.nuget.g.props",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.props",
+              "RelativeDocumentMoniker": "SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.props",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.props",
+              "RelativeToolTip": "SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.props",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-13T21:41:16.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SkillTrends-API.csproj.nuget.g.targets",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.targets",
+              "RelativeDocumentMoniker": "SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.targets",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.targets",
+              "RelativeToolTip": "SkillTrends-API\\obj\\SkillTrends-API.csproj.nuget.g.targets",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-13T21:41:15.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SkillTrends-API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\appsettings.Development.json",
+              "RelativeToolTip": "SkillTrends-API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-13T21:41:14.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Program.cs",
+              "RelativeDocumentMoniker": "SkillTrends-API\\Program.cs",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Program.cs",
+              "RelativeToolTip": "SkillTrends-API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:41:05.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\appsettings.json",
+              "RelativeDocumentMoniker": "SkillTrends-API\\appsettings.json",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\appsettings.json",
+              "RelativeToolTip": "SkillTrends-API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-13T21:39:04.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RiotApiService.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Services\\RiotApiService.cs",
+              "RelativeDocumentMoniker": "SkillTrends-API\\Services\\RiotApiService.cs",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Services\\RiotApiService.cs",
+              "RelativeToolTip": "SkillTrends-API\\Services\\RiotApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:03:25.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RiotApiController.cs",
+              "DocumentMoniker": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Controllers\\RiotApiController.cs",
+              "RelativeDocumentMoniker": "SkillTrends-API\\Controllers\\RiotApiController.cs",
+              "ToolTip": "C:\\Users\\demon\\Downloads\\SkillTrends-AI\\SkillTrends-API\\Controllers\\RiotApiController.cs",
+              "RelativeToolTip": "SkillTrends-API\\Controllers\\RiotApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T23:12:24.93Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
